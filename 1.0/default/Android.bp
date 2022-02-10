@@ -1,0 +1,20 @@
+cc_library_shared {
+    name: "vendor.sprd.hardware.thermal@1.0-impl",
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: [
+        "ExtThermal.cpp",
+    ],
+    shared_libs: [
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "libcutils",
+        "liblog",
+        "libbase",
+        "libhardware",
+        "vendor.sprd.hardware.thermal@1.0",
+        "android.hardware.thermal@1.0",
+        "android.hardware.thermal@1.1",
+    ],
+}
